@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seudo-clase</title>
+    
+    <style>
+        .menu{
+            background-color: #13a4a4;
+        }
+
+        .menu-nav{
+            list-style: none;
+            
+        }
+
+        .menu-nav__item{
+            display: inline-block;
+        }
+        .menu-nav__item a{
+            color: #ffff;
+            text-decoration: none;
+        }
+        /*Seudo clases
+        Define estilo de un estado*/
+
+        .menu-nav__item a:hover{
+            color: rgb(226, 53, 53);
+        }
+
+        .menu-nav__item a:active{
+            color: rgb(68, 68, 173);
+        }
+
+        /*seudo elemento
+        Define el estilo de una parte*/
+        .menu-nav__item a::after{
+            content: " | ";
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a href="">Inicio</a></li>
+                <li class="menu-nav__item"><a href="">Trabajos</a></li>
+                <li class="menu-nav__item"><a href="">Blog</a></li>
+                <li class="menu-nav__item"><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <ul>
+                <li>Item</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
